@@ -1,0 +1,23 @@
+{
+  "Records": [
+    {
+      "EventSource": "aws:sns",
+      "EventVersion": "1.0",
+      "EventSubscriptionArn": "arn:aws:sns:eu-west-1:{{{accountId}}}:ExampleTopic",
+      "Sns": {
+  "Type" : "Notification",
+  "MessageId" : "081f9b3c-8343-54de-a8ca-cc93f4134402",
+  "TopicArn" : "arn:aws:sns:eu-west-1:AccountId:elk_cloudwatch",
+  "Subject" : "ALARM: \"testcloud\" in EU (Ireland)",
+  "Message" : "{\"AlarmName\":\"ELKAlarm\",\"AlarmDescription\":null,\"AWSAccountId\":\"AccountId\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 3 out of the last 3 datapoints [98.1446364172371 (13/08/20 17:10:00)] was greater than the threshold (80.0) (minimum 3 datapoint for OK -> ALARM transition).\",\"StateChangeTime\":\"2020-08-13T17:14:56.287+0000\",\"Region\":\"EU (Ireland)\",\"AlarmArn\":\"arn:aws:cloudwatch:eu-west-1:AccountId:alarm:ELKAlarm\",\"OldStateValue\":\"INSUFFICIENT_DATA\",\"Trigger\":{\"MetricName\":\"MemoryUtilization\",\"Namespace\":\"System/Linux\",\"StatisticType\":\"Statistic\",\"Statistic\":\"AVERAGE\",\"Unit\":null,\"Dimensions\":[{\"value\":\"i-0b7fc4ff38af9511f\",\"name\":\"InstanceId\"}],\"Period\":900,\"EvaluationPeriods\":15,\"ComparisonOperator\":\"GreaterThanThreshold\",\"Threshold\":80.0,\"TreatMissingData\":\"- TreatMissingData:                    missing\",\"EvaluateLowSampleCountPercentile\":\"\"}}",
+  "Timestamp" : "2020-08-13T17:14:56.318Z",
+  "SignatureVersion" : "1",
+  "Signature" : "jFSO7yDvxVpBGt7ttx/TrE0Wukuq5efBmBanytoJgCORQj50B0fmcxS52RvWxEOl2J3wblBny6DZNB/IiDhLi9i8sXanQWD4cVC28v/ot1/OqS/2UlweT8q8/07cdHyMsH3+QtBLSSlFUs3VDd9wm7BJfWpKGV0lFYKupEcw7gLeyF6ltvhUsYoXSYMV62iIRIhQHEBuxgy8bVEYXWNmPoBGU6AIEaAmLkgbw186EznIOqL205jPgzm4pL6x4WjFkvvhFcz5pGfjPmZkBV52//a/6iUSpFBaPBYI2sJql+Dfm5T/tR08leQF3a+==",
+  "SigningCertURL" : "https://sns.eu-west-1.amazonaws.com/SimpleNotificationService-a86cb10b4e1f29c941702d7128f7b6.pem",
+  "UnsubscribeURL" : "https://sns.eu-west-1.amazonaws.com/?Action=Unsubscribe&SubscriptionArn=arn:aws:sns:eu-west-1:AccountId:elk_cloudwatch:a41aabfb-6ec9-4fce-9ba5-ff74d5f3703b"
+}
+    }
+  ]
+}
+
+
